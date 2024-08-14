@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="BM Sistemas">
+    <meta name="description" content=""> 
+    <meta name="keywords" content="Agendamento, Online, Gerenciamento, Gestão, Pesonalizável, Automático, Comissões, Lembretes, Faturamento, Detalhado, Agenda, Inteligente, Funções, Sistema">
+    <title>BM Sistemas</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- SWIPERJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- FIM SWIPERJS -->
+    
+</head>
+<body>
+   <div class="popup">
+        <div id="popup__card" class="card popup__card" style="width: auto;">
+            <iframe class="card-img-top"  src="https://www.youtube.com/embed/D_qqoH1-Ai0?si=7lM3vmONKqrkqJKP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="card-body">
+              <h2 class="card-title">Olá, Visitante</h2>
+              <p class="card-text">Nós da BM Sistemas <strong>recomendamos</strong> que você assista esse vídeo para poder entender melhor o nosso sistema, nesse vídeo explicamos tudo. <strong>Clique no vídeo para assistir ou no botão abaixo.</strong></p>
+              
+              <div class="popup__card__cronometro">
+                <button id="popup__buttonAssistir">Assistir agora!</button>
+                <button id="popup__buttonFechar">Fechar</button>
+                <p class="p-card__cronometro__p">Fechando em</p>
+                <p id="cronometro"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <header>
+        <div class="header__topo">
+            <img class="header__img" src="./assets/images/BM-LOGOS/BRANCA - LOGO BM SISTEMAS 2023.png" alt="logoBrancaBM"> 
+            
+            <nav class="header__links">
+                <a href="#">Dúvidas</a>
+                <a href="#">Planos</a>
+                <a id="buttonVideoExplicativo" href="#">Vídeo explicativo</a>
+            </nav>
+            
+            <div class="header__redes">
+                <a href="https://instagram.com/bmsistemass" target="_blank">
+                    <img src="./assets/images/icons/Instagram-line.png" alt="instagram">
+                </a>
+
+                <a href="https://youtube.com/bmsistemas" target="_blank">
+                    <img src="./assets/images/icons/Youtube-line.png" alt="youtube">
+                </a>
+
+                <a href="#" target="_blank">
+                    <img src="./assets/images/icons/Facebook-line.png" alt="facebook">
+                </a>
+            </div>
+
+            <div class="menuHamburguer">
+                <a href="#">Dúvidas</a>
+                <a href="#">Planos</a>
+                <a id="buttonVideoExplicativo2" href="#">Vídeo explicativo</a>
+                <button id="buttonCloseMenu" href="#">X</button>
+            </div>
+
+            <div id="menu" class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            
+    </div>
+    <div class="header__text">
+        <h1 id="typewriter" class="typewriter h-text__h1">TypeWriter</h1>
+        <p class="h-text__p">Conheça nossa solução que irá elevar seu negócio para o próximo passo!</p>
+    </div>
+    </header>
+
+
+    <main>
+        <section class="dados">
+            <div class="dado dados__estado">
+                <p class="dados__icon">+</p>
+                <span class="counter" id="dados__numero__estado">00</span>
+                <p class="dados__p">Estados</p>
+            </div>
+
+            <div class="dado dados__municipio">
+                <p class="dados__icon">+</p>
+                <span class="counter" id="dados__numero__municipio">00</span>
+                <p class="dados__p">Empresas</p>
+            </div>
+
+            <div class="dado dados__clientes">
+                <p class="dados__icon">+</p>
+                <span class="counter" id="dados__numero__clientes">24864</span>
+                <p class="dados__p">Agendametos por mês</p>
+            </div>
+        </section>
+
+        <section class="agendamento">
+            <div class="agendamento__text">
+                <span class="a-text__span">#GESTÃO</span>
+                <h2 class="a-text__h2">Como é realizado o <span id="h2__azul">Agendamento?</span></h2>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <img class="c-card__img" src="./assets/images/icons/whatsapp.png" alt="whatsapp">
+                    <h3 class="c-card__h3">WhatsApp</h3>
+                    <p class="c-card__p">Quando o cliente entra em contato, automaticamente é enviado
+                        uma mensagem de boas-vindas, orientando ele para o link de Agendamento.
+                    </p>
+                    <a href="https://bmsistemasdev.site/queroserbm/" class="button c-card__button" target="_blank">Obter sistema!</a>
+                </div>
+
+                <div class="card">
+                    <img class="c-card__img" src="./assets/images/icons/instagram.png" alt="whatsapp">
+                    <h3 class="c-card__h3">Instagram</h3>
+                    <p class="c-card__p">No seu perfil pessoal ou do seu estabelecimento, você poderá
+                        colocar um link que irá receber, ao clicar no link, o visitante poderá realizar o agendamento.
+                    </p>
+                    <a class="button c-card__button" href="https://bmsistemasdev.site/queroserbm/" target="_blank">Obter sistema!</a>
+                </div>
+
+                <div class="card">
+                    <img class="c-card__img" src="./assets/images/icons/simbolo-de-link-externo.png" alt="whatsapp">
+                    <h3 class="c-card__h3">Postagens</h3>
+                    <p class="c-card__p">
+                        Quando fizer publicações, campanhas ou promoções nas redes sociais, você poderá
+                        direcionar diretamente o cliente para o link.
+                    </p>
+                    <a href="https://bmsistemasdev.site/queroserbm/" class="button c-card__button" target="_blank">Obter sistema!</a>
+                </div>                
+            </div>
+        </section>
+
+        <section class="semLogin">
+            <img class="semLogin__img" src="./assets/images/icons/setaAzul.svg" alt="SVGseta">
+            <div class="semLogin__container">
+                <img class="s-container__img" src="./assets/images/cellphones/semLogin-img.png" alt="celularSemLogin">
+                <div class="s-container__text">
+                    <h2 class="s-container__text__h2">Não precisa baixar ou fazer login</h2>
+                    <p class="s-container__text__p">O cliente não gosta de barreiras para fazer seu 
+                        agendamento ou consultar os horários livres, pensando nisso, facilitamos ao máximo o processo de agendar.</p>
+                    <a href="https://bmsistemasdev.site/queroserbm/" target="_blank" class="button s-container__text__button">Eu quero!</a>
+                </div>
+            </div>
+
+            <div class="semLogin__container2">
+                <img class="s-container__img" src="./assets/images/cellphones/personalizavel-img.png" alt="celularPersonalizavel">
+                <div class="s-container__text">
+                    <h2 class="s-container__text__h2">Totalmente personalizável</h2>
+                    <p class="s-container__text__p">Valorizamos sua identidade visual. Deixamos o agendamento com a cara de seu negócio.</p>
+                    <a href="https://bmsistemasdev.site/queroserbm/" target="_blank" class="button s-container__text__button">Eu quero!</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="funcoes">
+            <div class="funcoes__card">
+                <img class="f-card__img" src="./assets/images/cellphones/lembreAutomatico.png" alt="celular">
+                <h3 class="f-card__h3">Lembretes automáticos</h3>
+                <p class="f-card__p">Seu cliente e você receberão uma mensagem automática no whatsapp 1 hora 
+                    antes do horario marcado, evitando atrasos e faltas sem avisos.</p>
+            </div>
+
+            <div class="funcoes__card">
+                <img class="f-card__img" src="./assets/images/cellphones/comissoesAutomaticas.png" alt="celular">
+                <h3 class="f-card__h3">Comissões automáticas</h3>
+                <p class="f-card__p">Seus profissionais acompanham
+                    em tempo real seus agendamentos
+                    e comissões, assim você sabe
+                    o valor que tem que pagar
+                    no fim do mês e 
+                    retiradas</p>
+            </div>
+
+            <div class="funcoes__card">
+                <img class="f-card__img" src="./assets/images/cellphones/faturamentoDetalhado.png" alt="celular">
+                <h3 class="f-card__h3">Faturamento detalhado</h3>
+                <p class="f-card__p">Além de ser alimentado automaticamente, 
+                    ele possibilita acompanhar todo o desempenho do 
+                    seu negócio de onde estiver</p>
+            </div>
+        </section>
+
+        <section class="aInteligente">
+            <h2 class="aInteligente__h2">Agenda inteligente</h2>
+
+            <div class="aInteligente__cards">
+                <div id="aInteligente__card1" class="aInteligente-cards__card">
+                    <span class="a-cards__card__span">
+                        <h3 class="a-cards__card__span__h3">Razão 1</h3>
+                        <img class="a-cards__card__span__img" src="./assets/images/icons/correto 1.png" alt="simboloCorreto">
+                    </span>
+                    <p class="a-cards__card__p">
+                        Verifica a duração do serviço e a disponibilidade de horários para o 
+                        mesmo, mostrando apenas os espaços disponíveis que se encaixem, 
+                        respeitando o próximo cliente.
+                    </p>
+                </div>
+
+                <div id="aInteligente__card2" class="aInteligente-cards__card">
+                    <span class="a-cards__card__span">
+                        <h3 class="a-cards__card__span__h3">Razão 2</h3>
+                        <img class="a-cards__card__span__img" src="./assets/images/icons/correto 1.png" alt="simboloCorreto">
+                    </span>
+                    <p class="a-cards__card__p">
+                        Você que diz quanto tempo dura cada um dos serviços, 
+                        assim ele entende como deve se comportar na sua agenda.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="convideClientes">
+            <div class="convideClientes__card">
+                <img class="con-card__img" src="./assets/images/cellphones/diversasFuncoes.png" alt="celular" >
+                <div class="con-card__text">
+                    <h3 class="con-card__text__h3">Diversas funções</h3>
+                    <p class="con-card__text__p">Nosso sistema conta com diversas funções que irão revolucionar a aparência e gestão do seu negócio</p>
+                    <a class="button con-card__text__button" href="https://bmsistemasdev.site/queroserbm/" target="_blank">Obter sistema!</a>
+                </div>
+                <img id="cubosIcon" class="con-card__icon" src="./assets/images/icons/cubes.svg" alt="SVGquadrados">
+            </div>
+
+            <div class="convideClientes__card2">
+                <img class="con-card__img" src="./assets/images/cellphones/convideClientes.png" alt="celular" >
+                <div class="con-card__text">
+                    <h3 class="con-card__text__h3">Convide seus clientes</h3>
+                    <p class="con-card__text__p">O sistema salva automaticamente o contato dos seus clientes, para que assim, nos dias de menor movimento, você poderá convidá-los com uma mensagem automática</p>
+                    <a class="button con-card__text__button" href="https://bmsistemasdev.site/queroserbm/" target="_blank">Obter sistema!</a>
+                </div>
+                <img id="directInstaicon" class="con-card__icon" src="./assets/images/icons/directIcon.png" alt="directInsta">
+            </div>
+        </section>
+
+        <section class="depoimentos">
+            <h3 class="depoimentos__h3">Depoimentos de nossos clientes</h3>
+            <p class="depoimentos__p">Leia abaixo os depoimentos de quem comprovou a eficiência de nossas soluções.</p>
+       
+                    <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#" target="_blank">
+                            <img class="s-slide__imgPessoa" src="./assets/images/persons/avatar.png" alt="fotoPessoa"> 
+                        </a>
+
+                        <h3 class="s-slide__h3">Alex Mello</h3>
+                        <p class="s-slide__p">“ Sou suspeito de falar do Sistema BM, mas revolucionou meu negócio hoje é muito mais otimizado, organizado, mais rápido, meus funcionários aprovaram, 
+                            acharam excelente. Hoje utilizamos o sistema com muita facilidade e muita precisão. 
+                            Eu super-indico o Sistemas BM. Há o suporte é excelente, 
+                            o Brayan da muita atenção e retorna muito rápido. Parabéns de verdade! "</p>
+                        
+                        <p class="s-slide__info">Barbeiro em Aquiraz - CE</p>
+                        <img class="s-slide__avaliacao" src="./assets/images/icons/stars.png" alt="estrelas">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" target="_blank">
+                            <img class="s-slide__imgPessoa" src="./assets/images/persons/avatar.png" alt="fotoPessoa"> 
+                        </a>
+
+                        <h3 class="s-slide__h3">Kadu</h3>
+                        <p class="s-slide__p">" Pra mim hoje em dia, a BM Sistemas se tornou um dos melhores sistemas de gestão e agendamento 
+                            online, antes eu escutava muito dos meus clientes, "Não vou baixar app". E atualmente, com a BM, é diferente. Tenho
+                            uma conversão de agendamentos online maior. Cerca de 70% dos clientes automatizados sem precisar ligar e nem me mandar
+                            mensagens. "</p>
+                        
+                        <p class="s-slide__info">Barbeiro em Seabra - BA</p>
+                        <img class="s-slide__avaliacao" src="./assets/images/icons/stars.png" alt="estrelas">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" target="_blank">
+                            <img class="s-slide__imgPessoa" src="./assets/images/persons/avatar.png" alt="fotoPessoa"> 
+                        </a>
+
+                        <h3 class="s-slide__h3">Nova Russas Tênis Club</h3>
+                        <p class="s-slide__p">“ Melhor coisa que fiz foi contratar a BM Sistemas, meu site é rápido e fácil de utilizar.
+                            E qualquer dúvida ou problema é resolvido com rapidez e atenção pelo Brayan "</p>
+                        
+                        <p class="s-slide__info">Club de Tênis e outros Esportes em Nova Russas - CE</p>
+                        <img class="s-slide__avaliacao" src="./assets/images/icons/stars.png" alt="estrelas">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" target="_blank">
+                            <img class="s-slide__imgPessoa" src="./assets/images/persons/avatar.png" alt="fotoPessoa"> 
+                        </a>
+
+                        <h3 class="s-slide__h3">Nova Russas Tênis Club</h3>
+                        <p class="s-slide__p">“ Melhor coisa que fiz foi contratar a BM Sistemas, meu site é rápido e fácil de utilizar.
+                            E qualquer dúvida ou problema é resolvido com rapidez e atenção pelo Brayan "</p>
+                        
+                        <p class="s-slide__info">Club de Tênis e outros Esportes em Nova Russas - CE</p>
+                        <img class="s-slide__avaliacao" src="./assets/images/icons/stars.png" alt="estrelas">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#" target="_blank">
+                            <img class="s-slide__imgPessoa" src="./assets/images/persons/avatar.png" alt="fotoPessoa"> 
+                        </a>
+
+                        <h3 class="s-slide__h3">Nay...</h3>
+                        <p class="s-slide__p">“ Esse sistema está sendo uma benção, ninguém atrasa mais. Estou muito satisfeita, Parabéns! "</p>
+                        
+                        <p class="s-slide__info">Maquiadora em Nova Russas - CE</p>
+                        <img class="s-slide__avaliacao" src="./assets/images/icons/stars.png" alt="estrelas">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+        </div>
+        </section>
+
+        <section class="planos">
+            <h3 class="planos__h3">Gostou?! Venha ser BM agora!!</h3>
+            <p class="planos__p">Planos acima de <strong>R$39,99</strong></p>
+
+            <div class="planos__container">
+                <img class="p-container__img" src="./assets/images/cellphones/semLogin-img.png" alt="celular">
+                <div class="p-container__text">
+                    <h3 class="p-container__text__h3">Agendamento</h3>
+                    <p class="p-container__text__p">Com o agendamento, seus clientes poderão agendar horários com você. Você e o cliente receberão um lembrete automático para evitar atrasos e muito mais!</p>
+                    <ul class="p-container__text__ul">
+                        <li class="p-container__text__ul__li">Lembrete automático</li>
+                        <li class="p-container__text__ul__li">Avaliação no Google</li>
+                        <li class="p-container__text__ul__li">Convite de Agendamento</li>
+                        <li class="p-container__text__ul__li">Site Personalizado</li>
+                    </ul> 
+                    <a href="https://bmsistemasdev.site/queroserbm/" target="_blank" class="button p-container__text__button">Quero ser BM!</a>   
+                </div>
+            </div>
+
+            <div class="planos__container2">
+                <img class="p-container__img" src="./assets/images/cellphones/diversasFuncoes.png" alt="celular">
+                <div class="p-container__text">
+                    <h3 class="p-container__text__h3">Gerenciamento</h3>
+                    <p class="p-container__text__p">Com o gerenciamento você irá ter total controle de tudo, do faturamento(bruto e líquido) do seu negócio, despesas, histórico de clientes, entre outros!</p>
+                    <ul class="p-container__text__ul">
+                        <li class="p-container__text__ul__li">Relatório de Serviços</li>
+                        <li class="p-container__text__ul__li">Comissões</li>
+                        <li class="p-container__text__ul__li">Histórico de Clientes</li>
+                        <li class="p-container__text__ul__li">Vendas e estoque</li>
+                        <li class="p-container__text__ul__li">Caixa</li>
+                        <li class="p-container__text__ul__li">Despesas</li>
+                        <li class="p-container__text__ul__li">Faturamento Bruto</li>
+                        <li class="p-container__text__ul__li">Faturamento Líquido</li>
+                        
+                    </ul> 
+                    <a href="https://bmsistemasdev.site/queroserbm/" target="_blank" class="button p-container__text__button">Quero ser BM!</a>   
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <h2 class="footer__h2">Copyright &copy; 2024 <a href="https://bmsistemasdev.site" target="_blank">BM Sistemas</a> | Todos os direitos reservados</h2>
+        <p class="footer__p">Powered by <a href="https://www.linkedin.com/in/harleymartins/" target="_blank">HarleyMartins</a></p>
+    </footer>
+
+
+<script src="./assets/js/swiper.js"></script>
+<script src="./assets/js/typewriter.js"></script>
+<script src="./assets/js/numbers.js"></script>
+<script src="./assets/js/menuHamburguer.js"></script>
+<script src="./assets/js/popup.js"></script>
+</body>
+</html>
